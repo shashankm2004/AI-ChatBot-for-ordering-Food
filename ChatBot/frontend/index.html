@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        
+        <div class="icons">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+</nav>
+    
+    <div class="hero">
+    <header>
+       
+        <div class="home-section"><br><br>
+            <h1>Taste of India</h1>
+            <p>Where Every Bite Tells a Story!</p><br><br><br>
+            <button class="cta-button" onclick="scrollToMenu()">Explore Our Menu</button>    </header>
+</div>
+<script>
+    function scrollToMenu() {
+        const menuSection = document.getElementById('menu');
+        menuSection.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+   
+    <section id="home">
+        <div class="container">
+            <h2>Welcome to Taste of India</h2><br>
+            <p>Experience the richness of Indian flavors!</p>
+            <p>At Taste of India, we bring you a variety of authentic Indian dishes prepared with the finest ingredients. Our passion for food reflects in every dish we serve.</p>
+            <img src="about.webp" alt="Delicious Indian Food" class="home-image">
+            <button class="cta-button" onclick="scrollToMenu()">Explore Our Menu</button>
+        </div>
+    </section>
+    <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Mumbai-Pav-Bhaji-Recipe.jpg" alt="Pav Bhaji">
+                    <h3>Pav Bhaji</h3>
+                    <p>Rs 40</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://static.toiimg.com/thumb/53314156.cms?imgsize=1762111&width=800&height=800" alt="Chole Bhature">
+                    <h3>Chole Bhature</h3>
+                    <p>Rs 50</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/05/Masala-Dosa.jpg" alt="Masala Dosa">
+                    <h3>Masala Dosa</h3>
+                    <p>Rs 60</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2017/05/Best-Mango-Mango-Lassi-Recipe.jpg" alt="Mango Lassi">
+                    <h3>Mango Lassi</h3>
+                    <p>Rs 25</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://st.depositphotos.com/1003814/5052/i/450/depositphotos_50523105-stock-photo-pizza-with-tomatoes.jpg" alt="Pizza">
+                    <h3>Pizza</h3>
+                    <p>Rs 100</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://media.istockphoto.com/id/179085494/photo/indian-biryani.jpg?s=612x612&w=0&k=20&c=VJAUfiuavFYB7PXwisvUhLqWFJ20-9m087-czUJp9Fs=" alt="Vegetable Biryani">
+                    <h3>Vegetable Biryani</h3>
+                    <p>Rs 100</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://media.istockphoto.com/id/1329213718/photo/vada-pav.jpg?s=612x612&w=0&k=20&c=Yy3pm53KrPAnZXL9weCJDzXjxa2My34oVFx7RBCPmZ8=" alt="Vada Pav">
+                    <h3>Vada Pav</h3>
+                    <p>Rs 25</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://media.istockphoto.com/id/1430060145/photo/sweet-tasty-fried-indian-dish-samosha-indian-delicious-deep-fried-breakfast-samosa-also-know.jpg?s=612x612&w=0&k=20&c=bxOAfJThGKNSzugC7Id_vPO9l5UPljCKSgOc18-2vS0=" alt="Samosa">
+                    <h3>Samosa</h3>
+                    <p>Rs 10</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+                <div class="menu-item">
+                    <img src="https://www.cookwithmanali.com/wp-content/uploads/2020/06/Crispy-Rava-Dosa-500x500.jpg" alt="Rava Dosa">
+                    <h3>Rava Dosa</h3>
+                    <p>Rs 50</p>
+                    <button onclick="toggleChatbot()">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Address: Bengaluru</p>
+            <p>Contact No.: 1234567893</p>
+            <p>Email: <a href="mailto:order-food@gmail.com">order-food@gmail.com</a></p>
+        </div>
+    </section>
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are passionate about bringing authentic and tasty Indian food to your table. Our dishes are prepared with highly selective and pure ingredients, ensuring every bite is an experience of true Indian flavors. We believe in offering delicious meals at reasonable prices, making every dining experience memorable for our customers.</p>
+        </div>
+    </section>
+    <!-- <iframe class="chat-bot" width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/26e44813-1fb1-492f-a8b8-6f745839704e"></iframe> -->
+    <div class="chatbot-container">
+        <button id="chatbot-button" class="chatbot-button" onclick="toggleChatbot()">💬</button>
+        <div id="chatbot" class="chatbot" style="display: none;">
+            
+            <!-- <iframe
+    allow="microphone;"
+    width="350"
+    height="430"
+    src="https://console.dialogflow.com/api-client/demo/embedded/fa509062-0f1d-4dce-8300-7d148d86364e">
+</iframe> -->
+            <!-- <iframe width="350" height="430" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/26e44813-1fb1-492f-a8b8-6f745839704e"></iframe> -->
+            <button class="close-button" onclick="toggleChatbot()">Close</button>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script>
+        window.onscroll = function() {stickyNav()};
+    
+        var nav = document.querySelector("nav");
+        var heroSection = document.querySelector(".hero");
+    
+        function stickyNav() {
+            if (window.pageYOffset >= heroSection.offsetHeight) {
+                nav.classList.add("sticky");
+            } else {
+                nav.classList.remove("sticky");
+            }
+        }
+
+        function toggleChatbot() {
+    const chatbot = document.getElementById('chatbot');
+    if (chatbot.style.display === 'none') {
+        chatbot.style.display = 'block'; // Show the chatbot
+    } else {
+        chatbot.style.display = 'none'; // Hide the chatbot
+    }
+}
+    </script>
+
+</body>
+</html>
+   
